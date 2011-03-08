@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110308043508) do
+ActiveRecord::Schema.define(:version => 20110308044001) do
 
   create_table "access_code_requests", :force => true do |t|
     t.string   "email"
@@ -34,6 +34,52 @@ ActiveRecord::Schema.define(:version => 20110308043508) do
   end
 
   add_index "access_codes", ["code"], :name => "index_access_codes_on_code"
+
+  create_table "content_permissions", :force => true do |t|
+    t.integer  "content_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "content_permissions", ["content_id", "user_id"], :name => "index_content_permissions_on_content_id_and_user_id"
+
+  create_table "content_translations", :force => true do |t|
+    t.integer  "content_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "locale"
+    t.boolean  "user_edited", :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "content_translations", ["content_id"], :name => "index_content_translations_on_content_id"
+  add_index "content_translations", ["locale"], :name => "index_content_translations_on_locale"
+
+  create_table "contents", :force => true do |t|
+    t.integer  "creator_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "locale"
+    t.text     "body_raw"
+    t.integer  "contentable_id"
+    t.string   "contentable_type"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.boolean  "is_public"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "layout"
+    t.integer  "comment_count",    :default => 0
+    t.string   "cached_slug"
+  end
+
+  add_index "contents", ["cached_slug"], :name => "index_contents_on_cached_slug"
+  add_index "contents", ["creator_id"], :name => "index_contents_on_creator_id"
+  add_index "contents", ["parent_id"], :name => "index_contents_on_parent_id"
 
   create_table "countries", :force => true do |t|
     t.string  "name",         :limit => 128, :default => "",   :null => false
@@ -100,6 +146,50 @@ ActiveRecord::Schema.define(:version => 20110308043508) do
   add_index "states", ["abbreviation"], :name => "index_states_on_abbreviation"
   add_index "states", ["country_id"], :name => "index_states_on_country_id"
   add_index "states", ["name"], :name => "index_states_on_name"
+
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "context"
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
+
+  create_table "tags", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "uploads", :force => true do |t|
+    t.integer  "creator_id"
+    t.string   "name"
+    t.string   "caption",             :limit => 1000
+    t.text     "description"
+    t.boolean  "is_public",                           :default => true
+    t.integer  "uploadable_id"
+    t.string   "uploadable_type"
+    t.string   "width"
+    t.string   "height"
+    t.string   "local_file_name"
+    t.string   "local_content_type"
+    t.integer  "local_file_size"
+    t.datetime "local_updated_at"
+    t.string   "remote_file_name"
+    t.string   "remote_content_type"
+    t.integer  "remote_file_size"
+    t.datetime "remote_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "uploads", ["creator_id"], :name => "index_uploads_on_creator_id"
+  add_index "uploads", ["local_content_type"], :name => "index_uploads_on_local_content_type"
+  add_index "uploads", ["uploadable_id"], :name => "index_uploads_on_uploadable_id"
+  add_index "uploads", ["uploadable_type"], :name => "index_uploads_on_uploadable_type"
 
   create_table "users", :force => true do |t|
     t.string   "login"

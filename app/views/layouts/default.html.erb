@@ -1,15 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!--
+
+__  __               _     __     __                                          
+|  \/  |             | |    \ \   / /                      /\                  
+| \  / | _   _   ___ | | __  \ \_/ /___   _   _  _ __     /  \    _ __   _ __  
+| |\/| || | | | / __|| |/ /   \   // _ \ | | | || '__|   / /\ \  | '_ \ | '_ \ 
+| |  | || |_| || (__ |   <     | || (_) || |_| || |     / ____ \ | |_) || |_) |
+|_|  |_| \__,_| \___||_|\_\    |_| \___/  \__,_||_|    /_/    \_\| .__/ | .__/ 
+| |    | |    
+|_|    |_|                                                                
+-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <%= render :partial => 'layouts/global/head' %>
 </head>
 <body>
-  <div id="wrapper" class="container">
-    <%= render :partial => 'layouts/global/header' %>
-    <div id="content-wrapper">
-      <div id="content">
-        <%= yield :layout %>
-      </div>
+  <div id="container"> 
+    <div id="content_container">
+      <%= render :partial => 'layouts/global/header' %>
+      <div class="clear_footer_small"></div> 
+      <%= yield :layout %>    
     </div>
     <%= render :partial => 'layouts/global/footer' %>
   </div>

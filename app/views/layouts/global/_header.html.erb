@@ -1,4 +1,15 @@
-<div class="block" id="header">
-    <a href="/"><div id="logo" class="span-8 column">&nbsp;</div></a>
-    <%= render :partial => 'layouts/global/login_controls' %>
+<div id="header"> 
+  <div id="logo"><a href="/"><div class="box"><img src="/images/logo.jpg" alt="Muck Your App" /></div></a></div>
+  <div id="login_nav"> 
+    <div id="signup"><img style="display:none;" src="/images/sign_up.gif" height="25" /></div>
+    <div id="login"><h4><%#= render :partial => 'layouts/global/login_controls' %></h4></div>
+    <div id="contact"><h4></h4></div>
+    <div id="nav"> 
+      <ul id="navlist"> 
+        <li><a href="wtf-is-muck">WTF is Muck?</a></li> 
+        <li><a href="how-it-works">How It Works</a></li> 
+        <li><a href="#">Github</a></li> 
+      </ul> 
+    </div>
   </div>
+</div>

@@ -1,0 +1,31 @@
+development:
+  adapter: mysql
+  database: muck_your_app_development
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+test:
+  adapter: mysql
+  database: muck_your_app_test
+  username: root
+  password:
+  host: localhost
+  encoding: utf8
+
+staging:
+  adapter: mysql
+  database: muck_your_app_staging
+  username: muck_your_app
+  password: 
+  host: localhost
+  encoding: utf8
+
+production:
+  adapter: mysql
+  database: muck_your_app_production
+  username: muck_your_app
+  password: 
+  host: localhost
+  encoding: utf8

@@ -4,28 +4,17 @@
   <div class="tr"></div> 
   <div class="big_content">
     <div id="instructions">
-      <h2>Build Your App</h2>
+      <h2>1. Build Your App With Muck</h2>
       <p>rails new <your-app> -m http://github.com/jbasdf/rails-templates/raw/master/muck.rb</p>
-        
-      Add optional functionality with the following command:
-        $ rake rails:template LOCATION=http://github.com/jbasdf/rails-templates/raw/master/muck_too.rb
-
-      Add testing frameworks and macros:
-        $ rake rails:template LOCATION=http://github.com/jbasdf/rails-templates/raw/master/muck_test.rb
-
-      Layout
-      =======
-      The muck template will build your basic application and construct all the needed files and configuration.
-
-      If you build your own layout be sure to include the following script in your layout or the javascript in the system won't work:
-        <script type="text/javascript" language="JavaScript">
-          <%= yield :javascript %>
-        </script>
-
-
-      Copyright (c) 2009-2011 Justin Ball, released under the MIT license
       
-      
+      <h2>2. Lay the Muck on Thicker</h2>
+      <p>rake rails:template LOCATION=http://github.com/jbasdf/rails-templates/raw/master/muck_too.rb</p>
+
+      <h2>3. Muck is Nasty. Add Tests</h2>
+      <p>rake rails:template LOCATION=http://github.com/jbasdf/rails-templates/raw/master/muck_test.rb</p>
+
+      <h2>4. Be Shocked</h2>
+      <p>Your app is totally mucked.</p>
     </div>
     <div style="float:right;"><a href="#"><img src="images/shoutout.png" /></a></div>
   </div>
@@ -34,121 +23,216 @@
   <div class="br"></div>
 </div>
 
-<div class="clear_footer"></div> 
-
-<div class="box"> 
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Activities</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
-
-<div class="box">  
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Auth</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
-
-<div class="box"> 
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Blogs</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
-
-<div class="box"> 
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Comments</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
 
 <div class="clear_footer"></div> 
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Commerce</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-engine">Muck-Engine</a></h1>
+    <p>The heart of muck.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box">  
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Contents</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-users">Muck-Users</a></h1>
+    <p>Sign up, Sign in, Lose password, Recover Password. Manage users and roles.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Engine</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
-
-<div class="box"> 
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Events</h1></div>
-  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
-</div>
-
-<div class="clear_footer"></div>  
-
-<div class="box"> 
-  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Feedbag</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-activities">Muck-Activities</a></h1>
+    <p>Users need something to do. Add ambiguous activities like Facebook but not.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box">  
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Friends</h1> </div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-contents">Muck-Contents</a></h1>
+    <p>Add content to your site with a WYSIWYG and wiki like reckless abandon.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+
+
+<div class="clear_footer"></div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-profiles">Muck-Profiles</a></h1>
+    <p>Get to know your neighbor. What do they like? Where do they live?. What kind of mucker are they?</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Groups</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-commerce">Muck-Commerce</a></h1>
+    <p>We all need some money. Think of Muck-Commerce as your cash machine.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
-<div class="box"> 
+<div class="box">  
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Invites</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-friends">Muck-Friends</a></h1>
+    <p>Connect with your muck buddies. Friends can be follow or two-way depending on how you roll.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
+
+
 
 <div class="clear_footer"></div> 
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Profiles</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-comments">Muck-Comments</a></h1>
+    <p>Help your users speak their mind. Comments can be attached to just about anything.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box">  
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Raker</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-auth">Muck-Auth</a></h1>
+    <p>Use OAuth to hookup with services all over the internet. Promiscuous aren't we?</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Resources</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-invites">Muck-Invites</a></h1>
+    <p>We're happier when we're together with friends. Added sophisticated invites to your muck site.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Services</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-services">Muck-Services</a></h1>
+    <p>Aggregate, search and recommend</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
+
+
+
+<div class="clear_footer"></div> 
+
+<div class="empty-box">&nbsp;</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-shares">Muck-Shares</a></h1>
+    <p>What's mine is yours. Let users share crap from all of the Internets.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box">  
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-raker">Muck-Raker</a></h1>
+    <p>Ruby meet Java. Raker lurks in the background aggregating, consuming, searching and recommending.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-resources">Muck-Resources</a></h1>
+    <p>Muck Resources is a one night stand. Add it. Use it for it's sexy resources then dump it.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+
 
 <div class="clear_footer"></div> 
 
 <div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Shares</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-groups">Muck-Groups</a></h1>
+    <p><span class="not-done">Not done</span> but muck groups will be incredible when it is.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
-<div class="box">  
+<div class="box"> 
   <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
-  <div class="small_content"><h1>Muck-Users</h1></div>
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-blogs">Muck-Blogs</a></h1>
+    <p><span class="not-done">Not done.</span> We kept thinking this wouldn't be that hard....</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-events">Muck-Events</a></h1>
+    <p><span class="not-done">Not done.</span> Feel free to fork it and add an event system. We're sure you'll do a great job. Then we'll steal your code.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+
+<div class="clear_footer"></div> 
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/tatemae/muck-feedbag">Muck-Feedbag</a></h1>
+    <p>We like to fork. Muck feedbag was borrowed, beaten and made to work with the muck framework.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/jbasdf/disguise">Disguise</a></h1>
+    <p>Many faces from one site. Disguise adds themes to your Rails app.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/jbasdf/babelphish">Babelphish</a></h1>
+    <p>Auto translate your yml and html files with Google. Speak to me in tongues.</p>
+  </div>
+  <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
+</div>
+
+<div class="box"> 
+  <div class="tl"></div><div class="small_tm"></div><div class="tr"></div> 
+  <div class="small_content">
+    <h1><a href="https://github.com/jbasdf/uploader">Uploader</a></h1>
+    <p>Get files from here to there.</p>
+  </div>
   <div class="bl"></div><div class="small_bm"></div><div class="br"></div> 
 </div>
 
@@ -156,28 +240,28 @@
 
 <div id="column_left"> 
   <h2>Testimonials</h2> 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis purus id nulla luctus tincidunt. Vestibulum varius ultrices erat, vitae posuere risus sollicitudin quis. Pellentesque sodales consequat diam eget laoreet. </p> 
+  <p>I wish I had found this sooner. I'm going to muck all my apps. <br /> <span class="testifier">-- happy mucker</span></p> 
   <p>&nbsp;</p> 
-  <p>Cras eleifend leo sit amet arcu pulvinar ac porta mauris laoreet. Donec ut lorem tristique lorem aliquet pretium. Quisque felis dui, tincidunt et dictum ut, lobortis at magna. Donec tincidunt varius consectetur.</p> 
+  <p>This is the stupidest name I have ever heard. <br /> <span class="testifier">-- angry mucker</span></p> 
   <p>&nbsp;</p> 
-  <p> Sed elementum pellentesque elit, sit amet hendrerit tellus egestas vel. Suspendisse tristique magna erat, id dignissim massa. </p> 
+  <p>This is my first time with Ruby on Rails and I just want to say thanks for making this open source.<br /> <span class="testifier">-- first time mucker</span></p> 
   <p>&nbsp;</p> 
-  <p>Proin tempor quam nec dolor egestas ultrices. Donec in diam at mauris interdum auctor. </p> 
+  <p>It's so easy to build prototypes with muck it's vulgar. I'm getting rich mucking my client's apps in no time at all. <br /> <span class="testifier">-- clever mucker</span></p> 
   <p>&nbsp;</p> 
-  <p>Donec vulputate urna vitae purus ultricies quis congue lacus ultricies.</p> 
+  <p>This is mucking amazing! <br /> <span class="testifier">-- anonymous mucker</span></p>
   <br /> 
 </div>
 
-<div id="column_right"><h2>In The News</h2> 
-  <p>Sed facilisis ultrices est, et feugiat mi cursus a. Cras tristique, neque quis placerat lobortis, nunc ipsum mollis risus, at tristique magna metus aliquet magna. Aliquam erat volutpat.</p> 
+<div id="column_right"><h2>About</h2> 
+  <p>Muck is a group of Ruby on Rails 3 engines that add common functionality like user management, friends, activity streams, commerce and content management.</p> 
   <p>&nbsp;</p> 
-  <p> Duis luctus egestas massa eu congue. Donec lorem felis, mollis eu sodales at, laoreet vitae augue. Praesent sodales urna non nunc pellentesque vitae rutrum nulla molestie. </p> 
+  <p>Muck let's you focus on the specifics of your application rather than implement common functionality over and over again</p> 
   <p>&nbsp;</p> 
-  <p>Quisque ac nisl dictum dolor tincidunt molestie. Vestibulum elit nisl, iaculis et tempus eu, varius quis quam. Integer tempus dapibus pellentesque. Donec aliquet nulla eu enim aliquet eu bibendum ligula mollis. Mauris sit amet enim mi, id consectetur lorem. </p> 
+  <p>We use it as the basis for all of our projects which let's us get stuff done faster. We love Ruby. We love Rails. We love sharing.</p> 
   <p>&nbsp;</p> 
-  <p>Phasellus ultrices, mi nec fringilla placerat, lectus erat placerat leo, non imperdiet velit tortor a dui. Donec congue suscipit mollis. Donec sed suscipit purus. Curabitur non suscipit eros. </p> 
+  <p>Muck is open source and all around free. If you have problems we love to watch people forking muck. Clone your favorite engine, do your thing and make a pull request. We'll respond ASAP.</p> 
   <p>&nbsp;</p> 
-  <p>Nunc fringilla orci at urna aliquet ut consequat purus rutrum. Etiam auctor placerat ipsum, quis bibendum sapien sollicitudin non.</p> 
+  <p></p> 
 </div>
 
 <div class="clear_footer"></div>

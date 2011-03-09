@@ -41,6 +41,7 @@ li{list-style-type:none;padding:0px;}
 #footer_column2{float:right;height:230px;width:300px;padding-top:20px;vertical-align:middle;}
 /*BIG ROUNDED CORNERS */
 .box{float:left;margin-left:5px;margin-right:5px;}
+.empty-box{float:left;margin-left:5px;margin-right:5px;width:240px;display:block;}
 .tl{width:5px;height:5px;background:url(/images/rounded.png) no-repeat top left;float:left;}
 .big_tm{width:980px;height:5px;float:left;background-color:#00aae5;}
 .tr{width:5px;height:5px;background:url(/images/rounded.png) no-repeat top right;float:left;}
@@ -52,7 +53,20 @@ p{margin:0px;padding:0px;}
 /*SMALL ROUNDED CORNERS */
 .small_tm{width:230px;height:5px;float:left;background-color:#00aae5;}
 .small_content{width:210px;height:110px;clear:left;background-color:#00aae5;padding-top:20px;padding-right:10px;padding-bottom:0;padding-left:20px;}
+.small_content a:hover{text-decoration:underline;color:#fff;}
+.small_content p{font-size:12px;}
+.small_content .not-done{color:#B61E12;}
 .small_bm{width:230px;height:5px;float:left;background-color:#00aae5;}
 
 /*home*/
-#instructions{background-color:#FFFFFF;float:left;height:340px;margin:4px 0 0;width:570px;padding:4px;}
+#instructions{background-color: #FFFFFF;float: left;height: 310px;margin: 4px 0 0;padding: 15px;width: 550px;}
+#instructions h2{margin:0;}
+#instructions p{font-size:11px;margin-bottom:20px;}
+.testifier{font-size:11px;font-weight:bold;}
+
+.common-content h1{color:#000;font-size:30px;}
+.common-content h2{margin:20px 0 0 0;}
+.common-content p{font-size:14px;}
+.common-content a{color:#00AAE5;}
+.common-content a:hover{text-decoration:underline;}
+.common-content pre{font-size:12px;}

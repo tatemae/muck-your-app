@@ -41,7 +41,7 @@ GEM
       builder
       mime-types
       xml-simple
-    babelphish (0.4.0)
+    babelphish (0.3.0)
       json
       ya2yaml
     babosa (0.2.2)
@@ -213,7 +213,7 @@ DEPENDENCIES
   acts-as-taggable-on
   authlogic
   autotest
-  babelphish
+  babelphish (= 0.3.0)
   bcrypt-ruby (>= 2.1.1)
   capybara
   cucumber

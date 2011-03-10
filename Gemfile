@@ -20,6 +20,7 @@ gem "paperclip"
 gem "friendly_id"
 gem "hoptoad_notifier"
 gem "recaptcha", :require => "recaptcha/rails"
+gem "nested_set"
 
 gem "uploader"
 gem "babelphish", "0.3.0"

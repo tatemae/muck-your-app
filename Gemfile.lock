@@ -234,6 +234,7 @@ DEPENDENCIES
   muck-solr
   muck-users (>= 3.1.0)
   mysql
+  nested_set
   paperclip
   rails (= 3.0.5)
   rcov

@@ -10,22 +10,29 @@ if RUBY_VERSION < '1.9'
 end
 
 gem "mysql"
-gem "authlogic"
+#gem "authlogic"
+gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git'
+
 gem "will_paginate"
+
 gem "bcrypt-ruby", ">=2.1.1", :require => "bcrypt"
 gem "paperclip"
 gem "friendly_id"
 gem "hoptoad_notifier"
 gem "recaptcha", :require => "recaptcha/rails"
+
+gem "uploader"
+gem "babelphish", "0.3.0"
 gem "muck-engine", ">=3.2.0"
 gem "muck-users", ">=3.1.0"
 gem "muck-resources", ">=3.0.0"
-gem "babelphish", "0.3.0"
 gem "muck-solr", :require => "acts_as_solr"
 gem "muck-contents"
+
 gem "tiny_mce"
-gem "uploader"
+
 gem "acts-as-taggable-on"
+
 group :test, :development do
   gem "rspec-rails"
   gem "cucumber-rails"

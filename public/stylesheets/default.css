@@ -70,3 +70,5 @@ p{margin:0px;padding:0px;}
 .common-content a{color:#00AAE5;}
 .common-content a:hover{text-decoration:underline;}
 .common-content pre{font-size:12px;}
+
+#examples .site{float:left;display:inline-block;margin:10px;}

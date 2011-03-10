@@ -1,0 +1,21 @@
+= MuckYourApp
+
+This is the source code for http://muckyourapp.com and represents a very simple muck site.
+
+== Build your own
+If you'd like to build your own muck site we have a Rails template to make it easy:
+
+  https://github.com/jbasdf/rails-templates
+  
+== Other apps
+We've built a number of applications using Muck which are also open source. They're a great way to understand how Muck can be used:
+
+  TwHistory
+  https://github.com/tatemae/TwHistory
+  
+  Folksemantic
+  https://github.com/COSL/folksemantic
+
+== Source Code  
+The source for all the muck gems can be found in the Tatemae github account (they all start with muck :-):
+  https://github.com/tatemae

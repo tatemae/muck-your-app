@@ -2,7 +2,8 @@
 /* GENERAL */
 html,body{margin:0;padding:0;}
 img{border-style:none;}
-h1{font-size:20px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#FFF;font-weight:bold;padding:0px;margin:0px;}
+h1{font-size:20px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#FFF;font-weight:bold;margin:0px;padding-top:0px;padding-right:0px;padding-bottom:5px;padding-left:0px;}
+h1 a:hover{color:#FF9440;text-decoration:none;}
 h2{font-size:20px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#00aae5;font-weight:normal;padding:0px;text-transform:uppercase;margin-top:0px;margin-right:0px;margin-bottom:15px;margin-left:0px;}
 h3{font-size:16px;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight:bold;color:#00aae5;margin-left:10px;margin-top:0px;margin-bottom:0px;}
 h4{font-size:14px;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight:bold;color:#00aae5;text-transform:uppercase;margin:0px;padding:0px;}
@@ -41,7 +42,6 @@ li{list-style-type:none;padding:0px;}
 #footer_column2{float:right;height:230px;width:300px;padding-top:20px;vertical-align:middle;}
 /*BIG ROUNDED CORNERS */
 .box{float:left;margin-left:5px;margin-right:5px;}
-.empty-box{float:left;margin-left:5px;margin-right:5px;width:240px;display:block;}
 .tl{width:5px;height:5px;background:url(/images/rounded.png) no-repeat top left;float:left;}
 .big_tm{width:980px;height:5px;float:left;background-color:#00aae5;}
 .tr{width:5px;height:5px;background:url(/images/rounded.png) no-repeat top right;float:left;}
@@ -52,11 +52,13 @@ p{margin:0px;padding:0px;}
 .br{width:5px;height:5px;background:url(/images/rounded.png) no-repeat bottom right;float:left;}
 /*SMALL ROUNDED CORNERS */
 .small_tm{width:230px;height:5px;float:left;background-color:#00aae5;}
-.small_content{width:210px;height:110px;clear:left;background-color:#00aae5;padding-top:20px;padding-right:10px;padding-bottom:0;padding-left:20px;}
+.small_content{width:210px;height:110px;clear:left;background-color:#00aae5;padding-top:5px;padding-right:10px;padding-bottom:0;padding-left:20px;}
 .small_content a:hover{text-decoration:underline;color:#fff;}
-.small_content p{font-size:12px;}
+.small_content p{font-size:12px;color:#FFFFFF;}
 .small_content .not-done{color:#B61E12;}
 .small_bm{width:230px;height:5px;float:left;background-color:#00aae5;}
+.empty-box{float:left;height:100px;width:250px;}
+.icons{float:right;bottom:0px;margin-right:10px;margin-top:10px;margin-left:10px;}
 
 /*home*/
 #instructions{background-color: #FFFFFF;float: left;height: 310px;margin: 4px 0 0;padding: 15px;width: 550px;}

@@ -32,4 +32,3 @@ rdoc
 pkg
 pkg/*
 log/*
-secrets.yml

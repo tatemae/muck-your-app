@@ -13,7 +13,7 @@ gem "mysql"
 #gem "authlogic"
 gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git'
 
-gem "will_paginate"
+gem "will_paginate", '~>3.0.beta'
 
 gem "bcrypt-ruby", ">=2.1.1", :require => "bcrypt"
 gem "paperclip"
@@ -21,7 +21,6 @@ gem "friendly_id"
 gem "hoptoad_notifier"
 gem "recaptcha", :require => "recaptcha/rails"
 gem "nested_set"
-gem 'dalli'
 
 gem "uploader"
 gem "babelphish", "0.3.0"
@@ -34,6 +33,10 @@ gem "muck-contents"
 gem "tiny_mce"
 
 gem "acts-as-taggable-on"
+
+group :production do
+  gem 'dalli'
+end
 
 group :test, :development do
   gem "rspec-rails"

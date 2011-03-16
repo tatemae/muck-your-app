@@ -1,5 +1,7 @@
 class DefaultController < ApplicationController
-
+  
+  caches_page [:index, 'how-it-works', 'wtf-is-muck']
+  
   def index
     respond_to do |format|
       format.html { render }

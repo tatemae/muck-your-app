@@ -1,3 +1,5 @@
+require 'active_support/cache/dalli_store23'
+
 Muckyourapp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -26,6 +28,7 @@ Muckyourapp::Application.configure do
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
+  config.cache_store = :dalli_store
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
@@ -46,4 +49,5 @@ Muckyourapp::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
 end
